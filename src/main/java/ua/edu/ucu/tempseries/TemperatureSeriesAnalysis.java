@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.InputMismatchException;
 
 public class TemperatureSeriesAnalysis {
+    protected double[] temperatureSeries;
+
     public double[] getTemperatureSeries() {
         return temperatureSeries;
     }
@@ -12,7 +14,6 @@ public class TemperatureSeriesAnalysis {
         this.temperatureSeries = temperatureSeries;
     }
 
-    protected double[] temperatureSeries;
 
     public TemperatureSeriesAnalysis() {
         throw new IllegalArgumentException("List is empty");

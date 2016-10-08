@@ -14,7 +14,14 @@ public class TemperatureSeriesAnalysisTest {
     @Test
     public void summaryStatistics() throws Exception {
 
+
     }
+    @Test(expected = IllegalArgumentException.class)
+    public void constructorWithEmptyAgrumentTest(){
+        TemperatureSeriesAnalysis seriesAnalysis = new TemperatureSeriesAnalysis();
+
+    }
+
 
     @Test
     public void testAddTempsWithArray1() {
