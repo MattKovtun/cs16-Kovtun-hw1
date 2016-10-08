@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TemperatureSeries.iml" filepath="$PROJECT_DIR$/TemperatureSeries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cs16-Kovtun-hw1.iml" filepath="$PROJECT_DIR$/cs16-Kovtun-hw1.iml" />
     </modules>
   </component>
 </project>

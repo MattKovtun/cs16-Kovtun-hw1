@@ -3,6 +3,8 @@ package ua.edu.ucu.tempseries;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
+import java.util.Arrays;
+
 public class TemperatureSeriesAnalysisTest {
 
     @Test
@@ -31,6 +33,7 @@ public class TemperatureSeriesAnalysisTest {
     @Test
     public void testAverage() {
         double[] temperatureSeries = {3.0, -5.0, 1.0, 5.0};
+   //     System.out.println(Arrays.toString(temperatureSeries));
         TemperatureSeriesAnalysis seriesAnalysis = new TemperatureSeriesAnalysis(temperatureSeries);
         double expResult = 1.0;
 

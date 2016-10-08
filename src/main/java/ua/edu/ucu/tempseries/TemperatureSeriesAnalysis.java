@@ -1,17 +1,29 @@
 package ua.edu.ucu.tempseries;
 
+import java.util.Arrays;
+
 public class TemperatureSeriesAnalysis {
+    protected double[] temperatureSeries;
 
     public TemperatureSeriesAnalysis() {
 
     }
 
     public TemperatureSeriesAnalysis(double[] temperatureSeries) {
-
+        if (temperatureSeries.length == 0 ) {
+            throw new IllegalArgumentException("List is empty");
+        }
+        this.temperatureSeries = temperatureSeries;
     }
 
     public double average() {
-        return -1;
+
+        double avg = 0;
+        for (double tmp : temperatureSeries) {
+            avg += tmp / temperatureSeries.length;
+        }
+
+        return avg;
     }
 
     public double deviation() {
