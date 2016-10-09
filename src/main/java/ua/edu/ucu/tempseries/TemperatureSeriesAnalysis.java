@@ -147,17 +147,17 @@ public class TemperatureSeriesAnalysis {
 
     public int addTemps(double... temps) {
         double[] resizedTemperatureSeries = new double[temperatureSeries.length + temps.length];
-        int sum = 0;
+   //     int sum = 0;
         for (int i = 0; i < temperatureSeries.length; ++i) {
-            sum += temperatureSeries[i];
+        //    sum += temperatureSeries[i];
             resizedTemperatureSeries[i] = temperatureSeries[i];
         }
         for (int i = 0; i < temps.length; ++i) {
-            sum += temps[i];
+           // sum += temps[i];
             resizedTemperatureSeries[temperatureSeries.length - 1 + i] = temps[i];
         }
         this.setTemperatureSeries(resizedTemperatureSeries);
-
-        return sum;
+        return resizedTemperatureSeries.length;
+        //return sum;
     }
 }

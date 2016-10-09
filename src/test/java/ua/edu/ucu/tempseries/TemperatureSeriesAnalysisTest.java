@@ -28,7 +28,7 @@ public class TemperatureSeriesAnalysisTest {
         double[] temperatureSeries = {-3.0, -1.0, 2.0, 137.5, 228, 388, 843};
         double[] addSeries = {-3.0, -1.0, 2.0, 137.5, 228, 388, 843};
         TemperatureSeriesAnalysis seriesAnalysis = new TemperatureSeriesAnalysis(temperatureSeries);
-        int expResult = 3188;
+        int expResult = 14;
         int actualResult = seriesAnalysis.addTemps(addSeries);
         assertEquals(expResult, actualResult);
 
